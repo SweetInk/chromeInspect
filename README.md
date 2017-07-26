@@ -5,16 +5,18 @@
 
 * 2.js中使用
     ```js
-      var ci = api.required("chromeInspect");
-      //开启调试
-      ci.enableDebug(function(ret,err){
-        console.log(ret);
-      });
-      //输出
-      //关闭调试
-      ci.disableDebug(function(ret,err){
-        console.log(ret);
-      })
+    apiready = function(){
+        var ci = api.require("chromeInspect");
+        //开启调试
+        ci.enableDebug(function(ret,err){
+          console.log(ret);
+        });
+        //输出
+        //关闭调试
+        ci.disableDebug(function(ret,err){
+          console.log(ret);
+        })
+      }
     ```
 # 系统要求
 * android 4.4+
